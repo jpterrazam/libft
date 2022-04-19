@@ -6,15 +6,15 @@
 /*   By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:29:42 by jpaulo-d          #+#    #+#             */
-/*   Updated: 2022/04/13 03:26:39 by jpaulo-d         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:04:38 by jpaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_tolower(char c)
+char	ft_tolower(int c)
 {
 	if (ft_isalpha(c) == 1)
-		c = c + 20;
+		c = c + 32;
 	return (c);
 }

@@ -6,7 +6,7 @@
 /*   By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:29:42 by jpaulo-d          #+#    #+#             */
-/*   Updated: 2022/04/19 16:47:59 by jpaulo-d         ###   ########.fr       */
+/*   Updated: 2022/04/19 20:23:33 by jpaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, &s, ft_strlen(s));
+	write(fd, s, ft_strlen(s));
 }

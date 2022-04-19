@@ -6,7 +6,7 @@
 /*   By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 03:27:03 by jpaulo-d          #+#    #+#             */
-/*   Updated: 2022/04/14 02:51:34 by jpaulo-d         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:51:01 by jpaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *adress, size_t n);
-void	*ft_calloc(size_t n_bloc, size_t size);
-int		ft_isalnum(char c);
-int		ft_isalpha(char c);
-int		ft_isascii(char c);
-int		ft_isdigit(char c);
-int		ft_isprint(char c);
+void	*ft_calloc(size_t n_block, size_t size);
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
 char	*ft_itoa(int n);
-void	*ft_memchr(const void *s, char c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
@@ -48,7 +48,7 @@ char	*ft_strnstr(const char	*big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	ft_tolower(char c);
-char	ft_toupper(char c);
+char	ft_tolower(int c);
+char	ft_toupper(int c);
 
 #endif

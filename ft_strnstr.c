@@ -6,7 +6,7 @@
 /*   By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:29:42 by jpaulo-d          #+#    #+#             */
-/*   Updated: 2022/04/14 02:49:42 by jpaulo-d         ###   ########.fr       */
+/*   Updated: 2022/04/20 00:39:55 by jpaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strnstr(const char	*big, const char *little, size_t len)
 {
 	unsigned int	i;
-	int	pin;
-	int	little_len;
+	int				pin;
+	int				little_len;
 
 	little_len = ft_strlen(little);
 	if (little_len == 0)

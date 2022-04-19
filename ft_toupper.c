@@ -6,15 +6,15 @@
 /*   By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:29:42 by jpaulo-d          #+#    #+#             */
-/*   Updated: 2022/04/13 03:26:49 by jpaulo-d         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:04:48 by jpaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_toupper(char c)
+char	ft_toupper(int c)
 {
 	if (ft_isalpha(c) == 2)
-		c = c - 20;
+		c = c - 32;
 	return (c);
 }
