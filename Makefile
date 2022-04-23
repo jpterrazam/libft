@@ -6,7 +6,7 @@
 #    By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/12 02:24:12 by jpaulo-d          #+#    #+#              #
-#    Updated: 2022/04/13 03:37:48 by jpaulo-d         ###   ########.fr        #
+#    Updated: 2022/04/23 03:15:33 by jpaulo-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,6 +52,10 @@ S_LIB	= ranlib
 CC		= gcc
 RM		= rm -f
 FLAGS	= #-Wall -Wextra -Werror
+
+so:
+	$(CC) -fPIC $(CFLAGS) $(SRC)
+	gcc -shared -o libft.so $(BIN)
 
 .c.o:
 			${CC} ${FLAGS} -c $< -o ${<:.c=.o}
