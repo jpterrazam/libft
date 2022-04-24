@@ -6,7 +6,7 @@
 #    By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/12 02:24:12 by jpaulo-d          #+#    #+#              #
-#    Updated: 2022/04/23 03:20:45 by jpaulo-d         ###   ########.fr        #
+#    Updated: 2022/04/24 04:03:16 by jpaulo-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,7 @@ C_LIB	= ar rc
 S_LIB	= ranlib
 CC		= gcc
 RM		= rm -f
-FLAGS	= #-Wall -Wextra -Werror
+FLAGS	= -Wall -Wextra -Werror
 
 .c.o:
 			${CC} ${FLAGS} -c $< -o ${<:.c=.o}
