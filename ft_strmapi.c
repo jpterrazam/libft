@@ -6,7 +6,7 @@
 /*   By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:29:42 by jpaulo-d          #+#    #+#             */
-/*   Updated: 2022/04/20 00:51:09 by jpaulo-d         ###   ########.fr       */
+/*   Updated: 2022/04/24 01:49:29 by jpaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	s_len;
-	char	*new_s;
-	int		i;
+	unsigned int	s_len;
+	char			*new_s;
+	unsigned int	i;
 
 	if (s == NULL || s == NULL)
 		return (NULL);

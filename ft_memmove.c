@@ -6,7 +6,7 @@
 /*   By: jpaulo-d <jpaulo-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:29:42 by jpaulo-d          #+#    #+#             */
-/*   Updated: 2022/04/19 21:52:21 by jpaulo-d         ###   ########.fr       */
+/*   Updated: 2022/04/24 01:46:40 by jpaulo-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,27 @@
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned int	i;
+	char			*cast_src;
+	char			*cast_dest;
 
-	if (dest < src)
+	cast_src = (char *)src;
+	cast_dest = (char *)dest;
+	if (cast_dest > cast_src)
 	{
-		i = 0;
-		while (i < n)
+		i = n;
+		while (i > 0)
 		{
-			((unsigned char *) dest)[i] = ((unsigned char *) src)[i];
-			i++;
+			i--;
+			cast_dest[i] = cast_src[i];
 		}
 	}
 	else
 	{
-		i = n - 1;
-		while (i >= 0)
+		i = 0;
+		while (i < n)
 		{
-			((unsigned char *) dest)[i] = ((unsigned char *) src)[i];
-			i--;
+			cast_dest[i] = cast_src[i];
+			i++;
 		}
 	}
 	return (dest);
