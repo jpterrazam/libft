@@ -14,8 +14,12 @@
 
 void	*ft_calloc(size_t n_block, size_t size)
 {
-	void	*mem_alloc;
+	void		*mem_alloc;
+	long int	test_alloc;
 
+	test_alloc = n_block * size;
+	if (n_block != 0 && (test_alloc / n_block != size))
+		return (NULL);
 	mem_alloc = (void *)malloc (n_block * size);
 	if (mem_alloc == NULL)
 		return (NULL);
